@@ -314,11 +314,11 @@ class HomePageController extends Controller
 
         // authentication attempt
         if (auth()->attempt($input)) {
-            if($user->user_type == 'Administrator'){
+            // if($user->user_type == 'Administrator'){
                 return redirect()->route('admin.dashboard');
-            }
+            // }
            
-            return back()->with('failure_report', 'You are not an Administrator');
+            // return back()->with('failure_report', 'You are not an Administrator');
                     
         } else {
             return back()->with('failure_report', 'User authentication failed.');

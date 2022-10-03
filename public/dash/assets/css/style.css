@@ -3001,21 +3001,21 @@ fieldset:disabled a.btn {
 
 .btn-info {
     color: #fff !important;
-    background-color: #59adec !important;
-    border-color: #59adec !important;
+    background-color: #1ad649 !important;
+    border-color: #1ad649 !important;
 }
 
 .btn-info:hover {
     color: #fff;
-    background-color: rgba(89, 173, 236, 0.85) !important;
-    border-color: rgba(89, 173, 236, 0.85);
+    background-color: #1ad649 !important;
+    border-color: #1ad649;
 }
 
 .btn-info:focus,
 .btn-info:focus {
     color: #fff !important;
-    box-shadow: 0 0 0 2px rgba(89, 173, 236, 0.9);
-    border-color: #59adec;
+    box-shadow: 0 0 0 2px #1ad649;
+    border-color: #1ad649;
 }
 
 .btn-info:disabled,

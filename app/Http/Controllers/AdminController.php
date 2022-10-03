@@ -86,7 +86,7 @@ class AdminController extends Controller
         ]); 
     }
 
-    public function logout()
+    public function admin_logout()
     {
         Session::flush();
 
@@ -400,7 +400,45 @@ class AdminController extends Controller
         } else {
             return back()->with([
                 'type' => 'danger',
-                'message' => 'Access denied!',
+                'message' => 'No Photo Added!',
+            ]);
+        }
+    }
+
+    public function update_profile($id, Request $request)
+    {
+        $this->validate($request, [
+            'name' => ['required', 'string'],
+        ]);
+
+        $userFinder = Crypt::decrypt($id);
+
+        $user = User::findorfail($userFinder);
+
+        if($user->email == $request->email)
+        {
+            $user->update([
+                'name' => $request->name
+            ]);
+
+            return back()->with([
+                'type' => 'success',
+                'message' => 'Profile Updated Successfully!'
+            ]); 
+
+        } else {
+            $this->validate($request, [
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            ]);
+
+            $user->update([
+                'name' => $request->name,
+                'email' => $request->email
+            ]);
+
+            return back()->with([
+                'type' => 'success',
+                'message' => 'Profile Updated Successfully!'
             ]);
         }
     }
@@ -432,6 +470,106 @@ class AdminController extends Controller
         return view('admin.admins', [
             'users' => $users
         ]);
+    }
+
+    public function admin_add(Request $request)
+    {
+        $this->validate($request, [
+            'user_type' => ['required'],
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'max:255', 'confirmed'],
+        ]);
+
+        User::create([
+            'user_type' => $request->user_type,
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Admin Added Successfully!'
+        ]); 
+    }
+
+    public function admin_update($id, Request $request)
+    {
+        $this->validate($request, [
+            'user_type' => ['required', 'string'],
+            'name' => ['required', 'string']
+        ]);
+
+        $userFinder = Crypt::decrypt($id);
+
+        $user = User::findorfail($userFinder);
+
+        if($user->email == $request->email)
+        {
+            $user->update([
+                'user_type' => $request->user_type,
+                'name' => $request->name
+            ]);
+
+            return back()->with([
+                'type' => 'success',
+                'message' => 'Profile Updated Successfully!'
+            ]); 
+
+        } else {
+            $this->validate($request, [
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            ]);
+
+            $user->update([
+                'user_type' => $request->user_type,
+                'name' => $request->name,
+                'email' => $request->email
+            ]);
+
+            return back()->with([
+                'type' => 'success',
+                'message' => 'Profile Updated Successfully!'
+            ]);
+        }
+    }
+
+    public function admin_update_password ($id, Request $request) 
+    {
+        $this->validate($request, [
+            'new_password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        $userFinder = Crypt::decrypt($id);
+
+        $user = User::findorfail($userFinder);
+        
+        $user->password = Hash::make($request->new_password);
+
+        $user->save();
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Password Updated Successfully!'
+        ]); 
+    }
+
+    public function admin_delete($id)
+    {
+        $finder = Crypt::decrypt($id);
+
+        $user = User::find($finder);
+
+        if($user->photo)
+        Storage::delete(str_replace("storage", "public", $user->photo));
+
+        $user->delete();
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Admin Deleted!'
+        ]); 
     }
 
     public function download($id)
