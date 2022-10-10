@@ -61,7 +61,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center wow fadeIn animated" data-wow-delay="300ms">
-                <p class="m-0 py-3">Copyright © 2020 <a href="#" class="hover-default">Luz de Calcio</a>. All Rights Reserved. <br>Luz de Calcio & InnovatorsTV are registered Trademark.</p>
+                <p class="m-0 py-3">Copyright © {{ date('Y') }} <a href="#" class="hover-default">Luz de Calcio</a>. All Rights Reserved. <br>Luz de Calcio & InnovatorsTV are registered Trademark.</p>
             </div>
         </div>
     </div>
