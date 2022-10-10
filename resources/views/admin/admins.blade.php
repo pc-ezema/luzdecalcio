@@ -107,7 +107,7 @@
                                                     <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#view-{{$user->id}}">View/Edit</button>
                                                     <div class="modal fade" id="view-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                                            <form method="Post" action="{{route('admin.admin.update', Crypt::encrypt($user->id))}}" enctype="multipart/form-data">
+                                                            <form method="Post" action="{{route('admin.admin.update', Crypt::encrypt($user->id))}}" enctype="multipart/form-data" style="width: 100%;">
                                                                 @csrf
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
@@ -148,7 +148,7 @@
                                                     <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#update-password-{{$user->id}}">Update Password</button>
                                                     <div class="modal fade" id="update-password-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                                            <form method="Post" action="{{route('admin.admin.update.password', Crypt::encrypt($user->id))}}" enctype="multipart/form-data">
+                                                            <form method="Post" action="{{route('admin.admin.update.password', Crypt::encrypt($user->id))}}" style="width: 100%;">
                                                                 @csrf
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
@@ -178,7 +178,7 @@
                                                 <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#delete-{{$user->id}}">Delete</button>
                                                 <div class="modal fade" id="delete-{{$user->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <form method="Post" action="{{route('admin.admin.delete', Crypt::encrypt($user->id))}}">
+                                                        <form method="Post" action="{{route('admin.admin.delete', Crypt::encrypt($user->id))}}" style="width: 100%;">
                                                             @csrf
                                                             <div class="modal-content">
                                                                 <div class="modal-header">

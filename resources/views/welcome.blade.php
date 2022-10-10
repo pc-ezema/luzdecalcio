@@ -60,7 +60,6 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
                 <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-                    <!-- <span>Quisque tellus risus, adipisci </span>-->
                     <h2 class="font-normal">How it Works </h2>
                 </div>
             </div>
@@ -97,6 +96,9 @@
                 </li>
 
             </ul>
+        </div>
+        <div class="mt-5 text-center">
+            <a href="/project/registration" class="btn btn-success">Register Project</a>
         </div>
     </div>
 </section>
@@ -439,6 +441,9 @@
                         <a href="{{route('download', Crypt::encrypt($bulletin->id))}}">
                             <img src="{{$bulletin->image}}" alt="" style="width: 100px">
                         </a>
+                        <p style="font-weight: 600; margin-left: 1rem;">
+                            {{$bulletin->name}}
+                        </p>
                         <br>
                     </div>
                     @endforeach

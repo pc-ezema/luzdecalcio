@@ -44,7 +44,7 @@
                             <span class="defaultcolor mb-3">Luz de Calcio</span>
                             <h2 class="darkcolor font-normal mb-4"><span class="d-none d-md-inline-block">Our</span> Address</h2>
                         </div>
-                        <p class="bottom10">Address: Block A3, Suite 7/8, Olugbede Model Market. Egbeda - Lagos, Nigeria.</p>
+                        <p class="bottom10">Address: No. 17, E Street, Shagari Estate, Federal Bus-stop, Ipaja Road, Lagos, Nigeria</p>
                         <p class="bottom10">+2348167538943 <br>+2349093073106 <br> +2349055085393 <br>
                             +2347019941901</p>
                         <p class="bottom10"><a href="mailto:support@luzdecalcio.net">support@luzdecalcio.net</a></p>
@@ -95,7 +95,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
-                                    <button type="submit" class="button gradient-btn w-100">Send</button>
+                                    <button type="submit" class="button gradient-btn w-100">Send </button>
                                 </div>
                             </div>
                         </form>
@@ -117,7 +117,7 @@
                 <div class="widget text-center top60 w-100">
                     <div class="contact-box">
                         <span class="icon-contact defaultcolor"><i class="fas fa-map-marker-alt"></i></span>
-                        <p class="bottom0">Block A3, Suite 7/8, Olugbede Model Market. Egbeda - Lagos, Nigeria </p>
+                        <p class="bottom0">No. 17, E Street, Shagari Estate, Federal Bus-stop, Ipaja Road, Lagos, Nigeria</p>
 
                     </div>
                 </div>

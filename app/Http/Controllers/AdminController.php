@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Bulletin;
 use App\Models\Category;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use App\Models\Invention;
 use App\Models\Message;
@@ -729,6 +730,27 @@ class AdminController extends Controller
         return back()->with([
             'type' => 'success',
             'message' => 'Invention Deleted!'
+        ]); 
+    }
+
+    public function contact_us()
+    {
+        $contacts = Contact::latest()->get();
+
+        return view('admin.contact', [
+            'contacts' => $contacts
+        ]);
+    }
+
+    public function contact_us_delete($id)
+    {
+        $finder = Crypt::decrypt($id);
+
+        Contact::find($finder)->delete();
+
+        return back()->with([
+            'type' => 'success',
+            'message' => 'Contact Form Deleted!'
         ]); 
     }
 }

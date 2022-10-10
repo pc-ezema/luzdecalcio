@@ -7,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Luzdecalcio | Home</title>
+    <title>{{config('app.name')}} | Home</title>
     <link href="{{URL::asset('images/logo.png')}}" rel="icon">
     <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/all.min.css')}}">
@@ -52,10 +52,36 @@
             font-family: 'Circular-Loom';
             src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
         }
+
+        .currency-wrap {
+            position: relative;
+        }
+
+        .currency-code {
+            position: absolute;
+            left: 8px;
+            top: 9px;
+        }
+
+        .text-currency {
+            padding: 10px 20px;
+        }
     </style>
+    <script type="text/javascript">
+        window.setTimeout(function() {
+            $(".alert-timeout").fadeTo(500, 0).slideUp(1000, function() {
+                $(this).remove();
+            });
+        }, 11000);
+    </script>
 </head>
 
 <body>
+    <div id='loader'>
+        <div class="loader-inner">
+            <div class="loading-content"></div>
+        </div>
+    </div>
     <!--PreLoader-->
     <div class="loader">
         <div class="loader-inner">
@@ -113,6 +139,14 @@
     <script src="{{URL::asset('js/revolution/extensions/revolution.extension.video.min.js')}}"></script>
     <!--custom functions and script-->
     <script src="{{URL::asset('js/functions.js')}}"></script>
+
+    <script>
+        $(function() {
+            $("form").submit(function() {
+                $('#loader').show();
+            });
+        });
+    </script>
 </body>
 
 </html>

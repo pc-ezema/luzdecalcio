@@ -91,17 +91,18 @@
 
         .intro-table {
             display: flex;
-            justify-content: space-between;
-            margin: 3rem 0 5rem 0;
+            margin: 3rem 0 1rem 0;
             border-top: 1px solid #000000;
             border-bottom: 1px solid #000000;
+			width: 100%;
+			align-content: center;
+			justify-content: center;
         }
 
         .intro-form {
-            display: flex;
-            flex-direction: column;
+            
             border-right: 1px solid #000000;
-            width: 33%;
+            width: 40%;
         }
 
         .intro-form:last-child {
@@ -133,11 +134,20 @@
         .intro-form-item-border:last-child {
             border-bottom: none;
         }
+		
+		.intro-form-right {
+     
+            border-right: 1px solid #000000;
+            width: 40%;
+        }
+
+        .intro-form-right:last-child {
+            border-right: none;
+        }
 
         .form {
             display: flex;
             flex-direction: column;
-            margin-top: 6rem;
         }
 
         .no-border {
@@ -280,7 +290,12 @@
         </div> -->
 
     <div class="page" style="page-break-after: always">
-        <div>
+        <div style="text-align: center;">
+            <h2>
+                Luz de Calcio Center for Support of African Innovations.
+            </h2>
+        </div>
+        <div style="text-align: center;">
             <h2>
                 {{$invention->fullname}} Invention Details
             </h2>
@@ -311,10 +326,7 @@
                 <p>
                     <strong>Email :</strong><br>{{$invention->email}}
                 </p>
-            </div>
-
-            <div class="intro-form intro-form-item">
-                <p>
+				<p>
                     <strong>Phone Number :</strong><br>{{$invention->phone}}
                 </p>
                 <p>
@@ -330,49 +342,17 @@
                     <strong>Country :</strong><br>{{$invention->country}}
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong>Invention Name</strong></p>
-                    {{$invention->projectname}}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong>What makes it a difference from other existing works?</strong></p>
-                    {{$invention->difference}}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong>Is your project patented?</strong></p>
-                    {{$invention->patent}}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong><strong>Has this project been registered before on another platform?</strong></strong></p>
-                    {{$invention->registered}}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong>What other problems can it solve?</strong></p>
-                    {{$invention->importance}}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong>Working details of Invention</strong></p>
-                    {{$invention->workingdetails}}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="intro-form-item-border">
-                    <p><strong>Cost of the Project</strong></p>
-                    {{$invention->cost}}
-                </div>
+
+            <div class="intro-form-right intro-form-item">
+                <p><strong>Invention Name</strong><br>{{$invention->projectname}}</p>
+				<p><strong>What makes it a difference from other existing works?</strong><br>{{$invention->difference}}</p>
+				<p><strong>Is your project patented?</strong><br>{{$invention->patent}}</p>
+				<p><strong>Has this project been registered before on another platform?</strong><br>{{$invention->registered}}</p>
+				<p><strong>What other problems can it solve?</strong><br>{{$invention->importance}}</p>
+				<p><strong>Working details of Invention</strong><br>{{$invention->workingdetails}}</p>
+				<p><strong>Cost of the Project</strong><br>{{$invention->cost}}</p>
+				<p><strong>Invention Name</strong><br>{{$invention->projectname}}</p>
+                    
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Blog;
+use App\Models\Contact;
 use App\Models\Invention;
 use App\Models\UploadInvention;
 use Illuminate\Support\Facades\Auth;
@@ -54,7 +55,19 @@ class HomePageController extends Controller
     {
         //Validate Request
         $this->validate($request, [
+            'name' => 'required|string',
+            'email' => 'required|email',
             'phone' => 'required|numeric',
+            'subject' => 'required|string',
+            'message' => 'required|string',
+        ]);
+
+        Contact::create([
+            'name' => request()->name,
+            'email' => request()->email,
+            'phone_number' => request()->phone,
+            'subject' => request()->subject,
+            'message' => request()->message
         ]);
 
         /** Store information to include in mail in $data as an array */
@@ -139,7 +152,7 @@ class HomePageController extends Controller
     {
         //Validate Request
         $this->validate($request, [
-            // 'category' => ['string', 'max:255'],
+            'category' => ['string', 'max:255'],
             // 'groupleadername' => ['string', 'max:255'],
             'fullname' => ['required', 'string', 'max:255'],
             // 'groupnumber' => ['required', 'string', 'max:255'],
@@ -161,6 +174,8 @@ class HomePageController extends Controller
             'short_video' => 'required|mimes:mp4,m4v,m4a,mp3,mpg,mov|max:10240',
             'inventor_photo' => 'required|mimes:jpeg,png,jpg|max:2048',
         ]);
+
+        $admin = User::where('user_type', 'Administrator')->first();
 
         if (request()->hasFile('rear_view')) 
         {
@@ -217,11 +232,18 @@ class HomePageController extends Controller
             $data = array(
                 'name' => request()->fullname,
                 'email' => request()->email,
+                'admin' => $admin->email,
+                'adminName' => $admin->name,
                 'created_at' => now(),
             );
             /** Send message to the user */
             Mail::send('emails.invention', $data, function ($m) use ($data) {
                 $m->to($data['email'])->subject(config('app.name').' Invention');
+            });
+
+            /** Send message to the admin */
+            Mail::send('emails.notify', $data, function ($m) use ($data) {
+                $m->to($data['admin'])->subject(config('app.name').' Invention');
             });
 
             return redirect()->route('registration.completed', Crypt::encrypt($request->email));   

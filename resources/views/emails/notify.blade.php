@@ -119,7 +119,7 @@
             <td  align="center">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
-                        <td align="left" valign="top" style="padding: 40px 30px 40px 30px; font-size: 20px;"> 
+                        <td align="center" valign="top" style="padding: 40px 30px 20px 30px; font-size: 20px;"> 
                             <img src="{{URL::asset('images/logo.png')}}" alt="{{config('app.name')}}" style="width: 150px; height: 50px;"></a>
 						</td>
                     </tr>
@@ -128,23 +128,11 @@
         </tr>
 		
 		<tr>
-            <td  align="center">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-                    <tr>
-                        <td align="left" valign="top" style="padding: 40px 30px 40px 30px; font-size: 20px; text-align: center"> 
-                            <h1 style="font-size: 20px; font-weight: 700;">Luz de Calcio Center for Support of African Innovations</h1>
-						</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
-        <tr>
             <td align="center" style="padding: 0px 10px 0px 10px;">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
-                        <td bgcolor="#ffffff" align="left" valign="top" style="border: 2px solid #11c246; padding: 10px 30px 10px 30px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
-                            <h1 style="font-size: 20px; font-weight: 400;">Hello {{ $name }}</h1> 
+                        <td bgcolor="#ffffff" align="left" valign="top" style="border-bottom: 1px solid #11c246; border-top: 1px solid #11c246; padding: 10px 30px 20px 30px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 1px; line-height: 10px;">
+                            <h1 style="font-size: 20px; font-weight: 400;">Hello {{$adminName}}</h1> 
                         </td>
                     </tr>
                 </table>
@@ -154,15 +142,12 @@
             <td align="center" style="padding: 0px 10px 0px 10px;">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                     <tr>
-                        <td align="left" style="padding: 20px 30px 40px 30px; color: #000; border-top: none; border-bottom: none; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-							<p>Welcome to {{ config('app.name') }}, you made the right decision to join us and 
-							we’re excited having you here.</p>
-							<p>	Please kindly wait while our support team gets back to you.</p>
-							<p>Thank you for choosing {{config('app.name')}}</p>
+                        <td align="left" style="padding: 20px 30px 20px 10px; color: #000; border-top: none; border-bottom: none; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+							<p>You have <span style="color: red;">1</span> new<sup style="color: red;">*</sup> Project Registered.</p>
                         </td>
                     </tr>		
                     <tr>
-                        <td bgcolor="#ffffff" align="left" style="border-top: none; padding: 10px 30px 40px 30px; border-radius: 0px 0px 4px 4px; color: #000; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                        <td bgcolor="#ffffff" align="left" style="border-top: 1px solid #11c246; padding: 10px 30px 40px 30px; border-radius: 0px 0px 4px 4px; color: #000; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
                             <p style="margin: 0;">Cheers, </br><b>{{config ('app.name')}} Team</b></p>
                         </td>
                     </tr>

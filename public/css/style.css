@@ -1726,7 +1726,7 @@ ul.links li a::before,
 /* ----- Navigation Starts ----- */
 
 .navbar {
-    padding: 0.35rem 0;
+    padding: 0.1rem 0;
     z-index: 1000;
 }
 
@@ -6707,4 +6707,47 @@ ul.latest_news li a:focus+span.defaultcolor {
 
 ::-webkit-scrollbar-thumb:hover {
     box-shadow: inset 0 0 100px 20px #11c246;
+}
+
+
+
+/*  */
+#loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    z-index: 99999;
+}
+
+.loader-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loading-content {
+	position: relative;
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #11c246; /* Blue */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+    margin: 2em;
+    display: inline-block;
+    vertical-align: middle;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

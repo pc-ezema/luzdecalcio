@@ -8,9 +8,7 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="page-titles whitecolor text-center" style="padding-bottom: 4rem; padding-top: 12.5rem">
-                    <h2 class="font-xlight">Welcome to</h2>
-                    <h2 class="font-bold">Tech INNOVATION CHALLENGE</h2>
-                    <h2 class="font-xlight"> on INSECURITY</h2><br>
+                    <h2 class="font-bold">Register Your Project</h2>
                     <h3 style="color:green;" class="pass" id="demo"></h3><br>
                 </div>
             </div>
@@ -18,7 +16,7 @@
         <div class="gradient-bg title-wrap">
             <div class="row">
                 <div class="col-lg-12 col-md-12 whitecolor">
-                    <h3 class="float-left">Register</h3>
+                    <h3 class="float-left">Project Registration</h3>
                     <ul class="breadcrumb top10 bottom10 float-right">
                         <li class="breadcrumb-item hover-light"><a href="/">Home</a></li>
                         <li class="breadcrumb-item hover-light">Register your projects here!
@@ -415,8 +413,9 @@
                             </div>
 
                             <div class="col-md-12 col-sm-12">
-                                <div class="form-group bottom35">
-                                    <input class="form-control" name="cost" type="text" placeholder="Cost of the Project:" required>
+                                <div class="form-group bottom35 currency-wrap">
+                                    <span class="currency-code">₦</span>
+                                    <input class="form-control text-currency" name="cost" type="number" placeholder="Cost of the Project:" required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">

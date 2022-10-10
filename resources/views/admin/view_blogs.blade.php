@@ -64,7 +64,7 @@
                                                     <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#view-{{$blog->id}}">View/Edit</button>
                                                     <div class="modal fade" id="view-{{$blog->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                                            <form method="Post" action="{{route('admin.update.blog', Crypt::encrypt($blog->id))}}" enctype="multipart/form-data">
+                                                            <form method="Post" action="{{route('admin.update.blog', Crypt::encrypt($blog->id))}}" enctype="multipart/form-data" style="width: 100%;">
                                                                 @csrf
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
@@ -100,7 +100,7 @@
                                                 <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#delete-{{$blog->id}}">Delete</button>
                                                 <div class="modal fade" id="delete-{{$blog->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendmessageLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <form method="Post" action="{{route('admin.delete.blog', Crypt::encrypt($blog->id))}}">
+                                                        <form method="Post" action="{{route('admin.delete.blog', Crypt::encrypt($blog->id))}}" style="width: 100%;">
                                                             @csrf
                                                             <div class="modal-content">
                                                                 <div class="modal-header">

@@ -13,17 +13,20 @@
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('about')) ? 'active' : '' }}" href="/about">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ (request()->is('project/registration')) ? 'active' : '' }}" href="/project/registration" >Project Registration</a>
+                    </li>
                     <li class="nav-item ">
                         <a class="nav-link {{ (request()->is('blog')) ? 'active' : '' }}" href="/blog"> Blog </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('register/invention')) ? 'active' : '' }}" href="/register/invention" >Register Invention</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('galleries')) ? 'active' : '' }}" href="/galleries">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://paystack.com/pay/-htn0-qfys" >Donate</a>
                     </li>
                 </ul>
             </div>
@@ -43,26 +46,28 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link  {{ (request()->is('/')) ? 'active' : '' }}"  href="/">Home </a>
-                   
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  {{ (request()->is('about')) ? 'active' : '' }}" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  {{ (request()->is('galleries')) ? 'active' : '' }}" href="/gallery">Gallery</a>
+                        <a class="nav-link  {{ (request()->is('project/registration')) ? 'active' : '' }}" href="/project/registration">Project Registration</a>
                     </li>
-                  
                     <li class="nav-item">
                         <a class="nav-link  {{ (request()->is('blog')) ? 'active' : '' }}"  href="/`blog">
                             Blogs 
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link  {{ (request()->is('galleries')) ? 'active' : '' }}" href="/gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link  {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact</a>
                     </li>
-                      <li class="nav-item">
-                        <a class="nav-link  {{ (request()->is('register/invention')) ? 'active' : '' }}" href="/register/invention">Register Invention</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://paystack.com/pay/-htn0-qfys">Donate</a>
                     </li>
+                    
                 </ul>
             </nav>
         </div>

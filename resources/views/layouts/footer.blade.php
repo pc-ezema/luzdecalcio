@@ -48,8 +48,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer_panel padding_bottom_half bottom20">
                     <h3 class="whitecolor bottom25">Support</h3>
-                    <p class="whitecolor bottom25">Block A3, Suite 7/8, Olugbede Model Market.
-                        Egbeda - Lagos, Nigeria</p>
+                    <p class="whitecolor bottom25">No. 17, E Street, Shagari Estate, Federal Bus-stop, Ipaja Road, Lagos, Nigeria</p>
                     <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p>
                 </div>
             </div>
