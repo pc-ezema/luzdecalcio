@@ -28,8 +28,8 @@
                             <h3 class="card-title">All Inventions</h3>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="data-table" class="table table-bordered text-nowrap border-bottom">
+                            <div class="table-responsive export-table">
+                                <table id="file-datatable" class="table table-bordered text-nowrap key-buttons border-bottom w-100">
                                     <thead>
                                         <tr> 
                                             <th class="border-bottom-0">S/N</th>
@@ -42,7 +42,7 @@
                                             <th class="border-bottom-0">Educational Level</th>
                                             <th class="border-bottom-0">City/State/Country</th>
                                             <th class="border-bottom-0">Project Name</th>
-                                            <th class="border-bottom-0">Action</th>
+                                            <th class="border-bottom-0">Actions</th>
                                         </tr>
                                     </thead>
                                     @if($inventions->isEmpty())

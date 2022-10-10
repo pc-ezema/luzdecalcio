@@ -639,7 +639,7 @@ class AdminController extends Controller
 
         $pdf = PDF::loadHTML($html);
     
-        return $pdf->download('itsolutionstuff.pdf');
+        return $pdf->download('Luzdecalcio-'.$invention->fullname.'.pdf');
     }
 
     public function upload_inventions()
