@@ -17,7 +17,7 @@ class AdminSeeder extends Seeder
         \App\Models\User::create([
             'user_type' => 'Administrator',
             'name' => 'Admin',
-            'email' => 'promiseezema11@gmail.com',
+            'email' => 'support@luzdecalcio.net',
             'email_verified_at' => now(),
             'password' => bcrypt('Password1'),
         ]);
