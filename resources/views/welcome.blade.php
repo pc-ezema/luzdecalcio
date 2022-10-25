@@ -33,16 +33,17 @@
                 <div class="heading-title mb-4">
                     <h2 class="darkcolor font-normal bottom30">Let Us Take Your <span class="defaultcolor">Inventions</span> To The Next Level.</h2>
                 </div>
-                <p class="bottom35">The strength of any nation lies in the increase and advancement of her technological base. Without a doubt, technological development is an integral for profound economic growth through increased communication, easy and fast access to new markets and increase in marketing channels. <br>
+                <p class="bottom35">The strength of any nation lies in the increase and advancement of her technological base. Without a doubt, technological development is an integral for profound economic growth through increased communication, 
+                    easy and fast access to new markets and increase in marketing channels. <br>
                     As I challenge all the great, young and talented minds in Nigeria and in Africa to take up this responsibility for our beloved continent, let's keep on with the good works of initiating and devising new solutions to our common problems, even as we collaborate to put Africa on pedestal of greatness.<br>
-                    Nothing hidden is ever celebrated. Every shinning light cannot but be put where it will serve it purpose. We at <b>Luz de Calcio Center for Support of African Innovations</b> bears so much a burden for this continent's advancement and cannot wait to celebrate the greatness of your ideas. We are ever ready to give you a platform to rise and come out of obscurity. Our core aim is to link up you with able institutions that will aid in giving all the necessary support required for your ideas to come to limelight. Likewise with good understanding that innovations are sustained through its exclusive rights, we shall join you in providing required legal aids towards protecting your good concepts from piracy and other forms of misappropriations.<br>
-                    Register your innovations with us today and get a lift to your next higher level.<br>
+                    Nothing hidden is ever celebrated. Every shinning light cannot but be put where it will serve it purpose. We at <b>Luz de Calcio Center for Support of African Innovations</b> bears so much a burden for this continent's advancement and cannot wait to celebrate the greatness of your ideas. We are ever ready to give you a platform to rise and come out of obscurity. 
+                    Our core aim is to network you with able institutions that will aid in giving all the necessary support required for your ideas to come to limelight. Likewise with good understanding that innovations are sustained through its exclusive rights, we shall join you in providing required legal aids towards protecting your good concepts from piracy and other forms of misappropriations.<br>
                     Welcome to Luz de Calcio! Welcome to shinning!<br>
                     <br><br>
                     <b>Femi Akinola <br>
                         C.E.O - Luz de Calcio Center for Support of African Innovations</b>
                 </p>
-                <a href="https://paystack.com/pay/-htn0-qfys" class="btn btn-success">Donate Now</a>
+                <a href="/project/registration" class="btn btn-success">Register Project</a>
                 <br><br>
             </div>
 
@@ -127,12 +128,7 @@
                             <h3 class="bottom15">
                                 <span class="d-inline-block">Our Vision</span>
                             </h3>
-                            <p>“Awakening inherent
-                                potentials and bringing
-                                to limelight African
-                                technological inventions
-                                and innovations
-                                for economic advantage."</p>
+                            <p>“Awakening and unveiling inherent potentials of young Africans in technological inventions and innovations towards Africans’ socio-economic advantage."</p>
                         </div>
                     </div>
                     <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="350ms" style="visibility: visible; animation-delay: 350ms; animation-name: fadeInLeft;">
@@ -141,7 +137,7 @@
                             <h3 class="bottom15">
                                 <span class="d-inline-block">Our Mission</span>
                             </h3>
-                            <p>"To source for promising young and talented Africans with outstanding initiatives and innovations to give a platform so they could come to limelight."</p>
+                            <p>"To source for promising young and talented Africans with outstanding initiatives in technological inventions and innovations, and giving them platform to come to limelight."</p>
                         </div>
                     </div>
                 </div>

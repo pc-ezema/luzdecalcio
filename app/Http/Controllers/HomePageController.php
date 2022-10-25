@@ -232,8 +232,8 @@ class HomePageController extends Controller
             $data = array(
                 'name' => request()->fullname,
                 'email' => request()->email,
-                'admin' => $admin->email,
-                'adminName' => $admin->name,
+                'admin' => 'support@luzdecalcio.net',
+                'adminName' => 'Admin',
                 'created_at' => now(),
             );
             /** Send message to the user */
@@ -285,11 +285,18 @@ class HomePageController extends Controller
                 $data = array(
                     'name' => request()->fullname,
                     'email' => request()->email,
+                    'admin' => 'support@luzdecalcio.net',
+                    'adminName' => 'Admin',
                     'created_at' => now(),
                 );
                 /** Send message to the user */
                 Mail::send('emails.invention', $data, function ($m) use ($data) {
                     $m->to($data['email'])->subject(config('app.name').' Invention');
+                });
+
+                /** Send message to the admin */
+                Mail::send('emails.notify', $data, function ($m) use ($data) {
+                    $m->to($data['admin'])->subject(config('app.name').' Invention');
                 });
 
                 return redirect()->route('registration.completed', Crypt::encrypt($request->email)); 

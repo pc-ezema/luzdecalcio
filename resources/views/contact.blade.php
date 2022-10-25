@@ -41,7 +41,7 @@
                 <div class="col-md-6 col-sm-6 order-sm-2">
                     <div class="contact-meta px-2 text-center text-md-left">
                         <div class="heading-title">
-                            <span class="defaultcolor mb-3">Luz de Calcio</span>
+                            <span class="defaultcolor mb-3">Luz De Calcio Center for Support of African Innovations</span></span>
                             <h2 class="darkcolor font-normal mb-4"><span class="d-none d-md-inline-block">Our</span> Address</h2>
                         </div>
                         <p class="bottom10">Address: No. 17, E Street, Shagari Estate, Federal Bus-stop, Ipaja Road, Lagos, Nigeria</p>
