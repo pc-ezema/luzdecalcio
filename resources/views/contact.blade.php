@@ -50,12 +50,9 @@
                         <p class="bottom10"><a href="mailto:support@luzdecalcio.net">support@luzdecalcio.net</a></p>
                         <p class="bottom10">Mon-Sat: 8am-6pm</p>
                         <ul class="social-icons mt-4 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay="300ms">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i> </a> </li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>
-                            <li><a href="#"><i class="fab fa-whatsapp"></i> </a> </li>
-                            <li><a href="#"><i class="far fa-envelope"></i> </a> </li>
+                            <li><a href="https://www.facebook.com/luzdecalciosupport"><i class="fab fa-facebook-f"></i> </a> </li>
+                            <li><a href="https://www.twitter.com/LuzDeCalcio/"><i class="fab fa-twitter"></i> </a> </li>
+                            <li><a href="https://www.instagram.com/luz_de_calcio/"><i class="fab fa-instagram"></i> </a> </li>
                         </ul>
                     </div>
                 </div>

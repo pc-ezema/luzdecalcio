@@ -92,17 +92,17 @@
         .intro-table {
             display: flex;
             margin: 3rem 0 1rem 0;
-            border-top: 1px solid #000000;
-            border-bottom: 1px solid #000000;
+            border: 1px solid #000000;
 			width: 100%;
 			align-content: center;
 			justify-content: center;
+			text-align: center;
         }
 
         .intro-form {
             
             border-right: 1px solid #000000;
-            width: 40%;
+            width: 80%;
         }
 
         .intro-form:last-child {
@@ -282,14 +282,14 @@
 
 <body>
     <!-- <div id="pspdfkit-header">
-            <div class="header-columns">
-                <div class="logotype">
-					<img class="logo" src="{{URL::asset('images/logo.png')}}" alt="{{config('app.name')}}">
-                </div>
+        <div class="header-columns">
+            <div class="logotype">
+                <img class="logo" src="{{URL::asset('images/logo.png')}}" alt="{{config('app.name')}}">
             </div>
-        </div> -->
+        </div>
+    </div> -->
 
-    <div class="page" style="page-break-after: always">
+    <div class="page">
         <div style="text-align: center;">
             <h2>
                 Luz de Calcio Center for Support of African Innovations.
@@ -313,9 +313,7 @@
                     <strong>Group Leader Name :</strong><br>{{$invention->groupleadername}}
                     @endif
                 </p>
-                <p>
-                    <strong>Full Name/Group Name :</strong><br>{{$invention->fullname}}
-                </p>
+                <p><strong>Full Name/Group Name :</strong><br>{{$invention->fullname}}</p>
                 <p>
                     @if($invention->groupnumber == null)
                     <strong>Group Number:</strong> <br>None
@@ -323,27 +321,12 @@
                     <strong>Group Number:</strong><br>{{$invention->groupnumber}}
                     @endif
                 </p>
-                <p>
-                    <strong>Email :</strong><br>{{$invention->email}}
-                </p>
-				<p>
-                    <strong>Phone Number :</strong><br>{{$invention->phone}}
-                </p>
-                <p>
-                    <strong>Age Category :</strong><br>{{$invention->age}}
-                </p>
-                <p>
-                    <strong>Educational Level :</strong><br>{{$invention->level}}
-                </p>
-                <p>
-                    <strong>City / State :</strong><br>{{$invention->citystate}}
-                </p>
-                <p>
-                    <strong>Country :</strong><br>{{$invention->country}}
-                </p>
-            </div>
-
-            <div class="intro-form-right intro-form-item">
+                <p><strong>Email :</strong><br>{{$invention->email}}</p>
+				<p><strong>Phone Number :</strong><br>{{$invention->phone}}</p>
+                <p><strong>Age Category :</strong><br>{{$invention->age}}</p>
+                <p><strong>Educational Level :</strong><br>{{$invention->level}}</p>
+                <p><strong>City / State :</strong><br>{{$invention->citystate}}</p>
+                <p><strong>Country :</strong><br>{{$invention->country}}</p>
                 <p><strong>Invention Name</strong><br>{{$invention->projectname}}</p>
 				<p><strong>What makes it a difference from other existing works?</strong><br>{{$invention->difference}}</p>
 				<p><strong>Is your project patented?</strong><br>{{$invention->patent}}</p>
@@ -352,12 +335,8 @@
 				<p><strong>Working details of Invention</strong><br>{{$invention->workingdetails}}</p>
 				<p><strong>Cost of the Project</strong><br>{{$invention->cost}}</p>
 				<p><strong>Invention Name</strong><br>{{$invention->projectname}}</p>
-                    
             </div>
         </div>
-    </div>
-
-    <div class="page" style="page-break-after: always">
         <div class="signer">
             <div class="form signer-item">
                 <label for="date" class="label">Date:</label>

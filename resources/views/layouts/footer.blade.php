@@ -12,7 +12,7 @@
                         </p>
                     </div>
                     <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
-                        <li><a href="https://web.facebook.com/luzdecalciosupport?_rdc=1&amp;_rdr" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="https://www.facebook.com/luzdecalciosupport" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
                         <li><a href="https://www.twitter.com/LuzDeCalcio/" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
                         <li><a href="https://www.instagram.com/luz_de_calcio/" class="insta"><i class="fab fa-instagram"></i> </a> </li>
                     </ul>
