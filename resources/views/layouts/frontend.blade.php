@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{URL::asset('css/revolution/navigation.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/revolution/settings.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('payment/css/pages.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('payment/css/pages-dependencies.css')}}">
+    <script src="https://kit.fontawesome.com/734378a53a.js" crossorigin="anonymous"></script>
     <script src="{{URL::asset('assets/js/vendor/modernizr-2.8.3.min.html')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
     <!-- fontawesome Icon -->

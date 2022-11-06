@@ -26,7 +26,7 @@
                         <a class="nav-link {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://paystack.com/pay/-htn0-qfys" >Donate</a>
+                        <a class="nav-link {{ (request()->is('donate')) ? 'active' : '' }}" href="/donate" >Donate</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
                         <a class="nav-link  {{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://paystack.com/pay/-htn0-qfys">Donate</a>
+                        <a class="nav-link {{ (request()->is('donate')) ? 'active' : '' }}" href="/donate">Donate</a>
                     </li>
                     
                 </ul>

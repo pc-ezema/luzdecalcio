@@ -116,15 +116,23 @@ class HomePageController extends Controller
         $finder = Crypt::decrypt($id);
 
         $blog = Blog::findorfail($finder);
-
+        
         $blog->views += 1;
         $blog->save();
+        
+        $shareButtons = \Share::page(url('/blog/view/'.Crypt::encrypt($blog->id)))
+        ->facebook()
+        ->twitter()
+        ->linkedin() 
+        ->telegram()
+        ->whatsapp();
         
         $latestblogs = Blog::latest()->take(1)->get();
         
         return view('single_blog',[
             'blog' => $blog,
-            'latestblogs' => $latestblogs
+            'latestblogs' => $latestblogs,
+            'shareButtons' => $shareButtons
         ]);
     }
 
@@ -361,5 +369,10 @@ class HomePageController extends Controller
         $bulletin = Bulletin::find($finder);
         
         return Storage::download('/public/bulletins/'.$bulletin->file);
+    }
+
+    public function donate()
+    {
+        return view('donate');
     }
 }

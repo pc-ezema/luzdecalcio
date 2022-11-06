@@ -1,4 +1,23 @@
 @extends('layouts.frontend')
+<style>
+    div#social-links ul {
+        padding-left: 0;
+        list-style: none;
+        display: flex !important;
+    }
+
+    div#social-links ul li {
+        display: inline-block;
+    }
+
+    div#social-links ul li a {
+        padding: 2px;
+        margin: 1px;
+        font-weight: 400;
+        font-size: 2em;
+        color: #2b2a63 !important;
+    }
+</style>
 
 @section('page-content')
 
@@ -38,7 +57,8 @@
             <div class="col-lg-8" id="blog">
                 <article class='blog-item heading_space wow fadeIn text-center text-md-left' data-wow-delay='300ms'>
                     <div class='image'><img src='{{$blog->image}}' class='border_radius'></div>
-                    <h3 class='darkcolor font-light bottom10 top30'> <a href="{{route('single.blog', Crypt::encrypt($blog->id))}}">{{$blog->title}}</a></h3>
+                    <h3 class='darkcolor font-light bottom10 top30'> <a href="{{route('single.blog', Crypt::encrypt($blog->id))}}">{{$blog->title}}</a> </h3>
+                    <p>Share this article: {!! $shareButtons !!}</p> 
                     <ul class='commment'>
                         <li><a href="{{route('single.blog', Crypt::encrypt($blog->id))}}"><i class='fas fa-calendar'></i>{{$blog->created_at->toDayDateTimeString()}}</a></li>
                     </ul>
