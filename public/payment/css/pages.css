@@ -815,9 +815,9 @@ body {
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  height: 35px;
+  /* height: 35px; */
   line-height: 33px;
   outline: none;
   padding-left: 1.5em;

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer_panel padding_bottom_half bottom20">
-                    <a href="/" class="footer_logo bottom25"><img src="{{URL::asset('images/logo.png')}}" style="width: 150px; height: 50px;"></a>
+                    <a href="/" class="footer_logo bottom25"><img src="{{URL::asset('images/logo-white.png')}}" style="width: 150px; height: 50px;"></a>
                     <div class="d-table w-100 address-item whitecolor bottom25">
                         <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
                         <p class="d-table-cell align-middle bottom0">

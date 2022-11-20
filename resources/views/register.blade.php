@@ -47,11 +47,11 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <div class="form-group bottom35">
-                                    <select name="category" required class="form-control" required/>
-                                        <option value="">Select Category </option>
-                                        @foreach($categories as $category)
-                                        <option value="{{$category->category}}">{{$category->category}}</option>
-                                        @endforeach
+                                    <select name="category" required class="form-control" required />
+                                    <option value="">Select Category </option>
+                                    @foreach($categories as $category)
+                                    <option value="{{$category->category}}">{{$category->category}}</option>
+                                    @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -433,7 +433,8 @@
                             <div class="col-md-6 col-sm-12">
                                 <div class="form-group bottom35">
                                     <label class="defaultcolor">Short Video of project (360° view) (Max. 10MB)</label>
-                                    <input id="file_id3" class="form-control" type="file" name="short_video" >
+                                    <span>Note: The Video should contain a brief explanation about the project.</span>
+                                    <input id="file_id3" class="form-control" type="file" name="short_video">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
@@ -445,10 +446,10 @@
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group bottom35">
                                     <div class="form-check text-left">
-                                        <input class="form-check-input" checked type="checkbox" value="" required>
-                                        <label class="form-check-label">
-                                            By Submitting, I agree to the <a href="/terms-and-conditions" class="defaultcolor">terms and conditions</a> of this organization.
-                                        </label>
+                                        <!-- <input class="form-check-input" checked type="checkbox" value="" required> -->
+                                        <!-- <label class="form-check-label"> -->
+                                        By Submitting, I agree to the <a href="/terms-and-conditions" class="defaultcolor">terms and conditions</a> of this organization.
+                                        <!-- </label> -->
                                     </div>
                                 </div>
                             </div>
@@ -462,5 +463,33 @@
 
         </div>
     </div>
+
+    <div id="open-modal" class="modal-window" data-keyboard="false" data-backdrop="static">
+        <div>
+            <a href="#" title="Close" class="modal-close" data-dismiss="modal">Close</a>
+            <h1>IMPORTANT NOTICE! 👇</h1>
+            <div>Be informed that your project must meet the following criteria before submission.</div>
+            <br>
+            <div>
+                <ol>
+                    <li class="mb-3 text-justify"><span class="font-weight-bold">1. Solve a problem:</span> The project must meet a need and solve a clear problem of the people in the locality with characteristics such as reduced cost, increase income, achieve better results and satisfies an unmet need.</li>
+                    <li class="mb-3 text-justify"><span class="font-weight-bold">2. Locally Sourced Raw Materials:</span> About 80% locally sourced raw material. This will help promote the development and utilisation of African abundant natural resources as input for sustainable growth and development of manufacturing sector.</li>
+                    <li class="mb-3 text-justify"><span class="font-weight-bold">3. Sustainability:</span> It must aims to “meet the needs of present generations without compromising the needs of future generations" with strong consideration on its eco-friendliness and effect on climate change.</li>
+                    <li class="mb-3 text-justify"><span class="font-weight-bold">4. Industrial Usefulness:</span> The project must be industrial applicable, practicable and possible to replicate it's implementation. It necessarily must target an industrial need and satisfy implicit requirements that are unique to the industry and customers in order to make it relevant in marketplace.</li>
+                    <li class="mb-3 text-justify"><span class="font-weight-bold">5. Economic Value:</span> The project must make a financial sense. Your expected return must be large and justify your substantial investment of time, effort and money, and the return must occur in a reasonable time frame.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    window.onload = function() {
+        // var delayMs = 1500; // delay in milliseconds
+
+        // setTimeout(function(){
+        $('#open-modal').modal('show');
+        // }, delayMs);
+    };
+</script>
 @endsection
