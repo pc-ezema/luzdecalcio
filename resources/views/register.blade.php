@@ -433,7 +433,7 @@
                             <div class="col-md-6 col-sm-12">
                                 <div class="form-group bottom35">
                                     <label class="defaultcolor">Short Video of project (360° view) (Max. 10MB)</label>
-                                    <span>Note: The Video should contain a brief explanation about the project.</span>
+                                    <span>Note: The Video should contain a oral explanation about the project.</span>
                                     <input id="file_id3" class="form-control" type="file" name="short_video">
                                 </div>
                             </div>

@@ -6776,7 +6776,6 @@ ul.latest_news li a:focus+span.defaultcolor {
     transform: translate(-50%, -50%);
     padding: 2em;
     background: white;
-    
 }
 
 @media (max-width: 621px) {
