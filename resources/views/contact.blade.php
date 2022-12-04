@@ -45,8 +45,7 @@
                             <h2 class="darkcolor font-normal mb-4"><span class="d-none d-md-inline-block">Our</span> Address</h2>
                         </div>
                         <p class="bottom10">Address: No. 17, E Street, Shagari Estate, Federal Bus-stop, Ipaja Road, Lagos, Nigeria</p>
-                        <p class="bottom10">+2348167538943 <br>+2349093073106 <br> +2349055085393 <br>
-                            +2347019941901</p>
+                        <p class="bottom10">+2347019941901 <br>+2349093073106 <br> +2348092377861
                         <p class="bottom10"><a href="mailto:support@luzdecalcio.net">support@luzdecalcio.net</a></p>
                         <p class="bottom10">Mon-Sat: 8am-6pm</p>
                         <ul class="social-icons mt-4 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay="300ms">

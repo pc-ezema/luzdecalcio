@@ -7,8 +7,8 @@
                     <div class="d-table w-100 address-item whitecolor bottom25">
                         <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
                         <p class="d-table-cell align-middle bottom0">
-                            +2348167538943 <br> +2349093073106 <br>+2349055085393 <br>
-                            +2347019941901<a class="d-block" href="mailto:support@luzdecalcio.net">support@luzdecalcio.net</a>
+                            +2347019941901 <br> +2349093073106 <br>+2348092377861 
+                            <a class="d-block" href="mailto:support@luzdecalcio.net">support@luzdecalcio.net</a>
                         </p>
                     </div>
                     <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
